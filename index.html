@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Regexp Checker</title>
+</head>
+
+<body>
+
+    <div class="outerCont">
+        <div class="regForm">
+
+
+            <form id="regForm">
+
+
+                <div class="regBuilderOuter">
+
+                    <div class="reg">
+                        <h3 class="const">const</h3>
+                        <h3 class="regex">reg</h3>
+                        <h3 class="equals">=</h3>
+                        <h3 class="forwardSlash">/</h3>
+                        <input id="regInput" required placeholder="Enter regex" autocomplete="off" />
+                        <h3 class="forwardSlash">/</h3>
+                        <h3 id="flagDisp"></h3>
+                    </div>
+
+
+
+
+                    <div class="flagsAndMethods">
+                        <select name="flags" id="flagsMenu" class="selectMenu">
+                            <option>Flags</option>
+                            <option value="g" id="g">g</option>
+                            <option value="i" id="i">i</option>
+                            <option value="m">m</option>
+                            <option value="s">s</option>
+                            <option value="u">u</option>
+                            <option value="y">y</option>
+                        </select>
+
+
+                        <fieldset class="methodsFieldSet">
+                            <legend>Methods:</legend>
+                            <div>
+                                <label for="test">Test</label>
+                                <input type="checkbox" id="test" value="test" name="test" />
+                                <label for="match">Match</label>
+                                <input type="checkbox" id="match" value="match" name="match" />
+                            </div>
+                            <div>
+                                <label for="split">Split</label>
+                                <input type="checkbox" id="split" value="split" name="split" />
+                                <label for="replace">Replace</label>
+                                <input type="checkbox" id="replace" value="replace" name="replace" />
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+
+                </div>
+
+                <div id="replaceDiv"> </div>
+                <div id="warningCard">
+                    <h2 id="warning"></h2>
+                </div>
+
+                <h1>let str = </h1>
+                <textarea id="strInput" required autocorrect="off" autocomplete="off"
+                    placeholder="Enter test String"></textarea>
+                <button type="submit" id="testBtn">Run</button>
+            </form>
+
+        </div>
+
+        <div id="outputCard">
+            <h4 id="regExOutput"></h4>
+            <h4 id="testOutput"></h4>
+            <h4 id="matchOutput"></h4>
+            <h4 id="splitOutput"></h4>
+            <h4 id="replaceOutput"></h4>
+
+        </div>
+
+
+
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

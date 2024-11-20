@@ -1,0 +1,222 @@
+body {
+    background-color: #1f1f1f;
+    color: #47abe1;
+}
+
+.outerCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.regBuilderOuter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.const {
+    margin-right: 8px;
+    /* color: #3c6b96; */
+    color: #5894cd;
+
+    font-size: 30px;
+
+}
+
+.regex {
+    margin-right: 7px;
+    /* color: dodgerblue; */
+    color: #47abe1;
+    font-size: 30px;
+}
+
+.equals {
+    /* color: white; */
+    color: #acacac;
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+.forwardSlash {
+    font-size: 40px;
+    /* color: tomato; */
+    color: #c66464;
+}
+
+#regInput {
+    border: none;
+    outline: none;
+    background-color: #1f1f1f;
+    text-decoration: none;
+    /* color: tomato; */
+    color: #c66464;
+    font-size: 25px;
+
+
+}
+
+#regInput::placeholder {
+    border: none;
+    outline: none;
+    background-color: #1f1f1f;
+    text-decoration: none;
+    color: tomato;
+    font-size: 25px;
+}
+
+#regInput:hover {
+    border: none;
+    outline: none;
+    background-color: tomato;
+    opacity: 80%;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+#flagDisp {
+    color: #5294ca;
+    font-size: 30px;
+}
+
+.flagsAndMethods {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid #23668b;
+    box-shadow: 0 2px 4px 0 rgba(234, 220, 220, 0.2), 0 3px 10px 0 rgba(243, 231, 231, 0.19);
+
+}
+
+.selectMenu {
+    outline: none;
+    border: 1px solid #47abe1;
+    background-color: black;
+    opacity: 80%;
+    color: #47abe1;
+    font-size: 20px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.methodsFieldSet {
+    color: #47abe1;
+    border: 1px solid #47abe1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#replaceDiv {
+    height: 80px;
+    padding: 0;
+    margin: 0;
+
+}
+.replaceInput {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 25px;
+   width: 160px;
+    background-color:  #3e3e3e;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 1000px;
+    height: 300px;
+    resize: none;
+
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    font-size: 25px;
+    padding: 19px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    
+
+
+}
+
+
+#testBtn {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #47abe1;
+    background-color: black;
+    opacity: 80%;
+    color: #47abe1;
+    font-size: 20px;
+    margin-left: 10px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 0 2px 4px 0 rgba(234, 220, 220, 0.2), 0 3px 10px 0 rgba(243, 231, 231, 0.19);
+}
+
+.outputCard {
+    border: 3px solid #47abe1;
+    margin-top: 15px;
+    padding: 28px;
+    background-color: black;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(234, 220, 220, 0.2), 0 6px 20px 0 rgba(243, 231, 231, 0.19);
+}
+
+.warningCard {
+    border: 3px solid #47abe1;
+    padding: 18px;
+    display: flex;
+    background-color: rgb(224, 104, 82);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+
+
+.cardFont {
+    font-size: 20px;
+    font-family: monospace;
+    border-bottom: 3px solid #47abe1;
+}
